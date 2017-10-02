@@ -4,6 +4,7 @@
 
     <a class="brand" href="{{ url('/') }}">
       <img src="{{ asset('img/headshot-square.jpg') }}">
+      <i class="fal fa-code"></i>
     </a>
 
     <div class="brand-text">
