@@ -21,8 +21,12 @@ body {
   flex-direction: column;
 }
 
+.container {
+  max-width: 650px;
+}
+
 .wrap {
-  margin-top: 20px;
+  margin-top: 15px;
   flex: 1 0 auto;
 }
 
@@ -46,20 +50,18 @@ h3 {
   font-weight: 300;
 }
 
-.container {
-  max-width: 650px;
-}
-
 /* Header */
 
 .banner {
+  border-top: 20px solid $brand-primary;
   text-align: center;
-  margin: 25px 0;
+  padding-top: 25px;
   .brand {
     display: inline-block;
     img {
-      border: 2px solid $brand-primary;
       max-width: $avatar-width;
+      border: 5px solid $brand-primary;
+      border-radius: 10px;
     }
   }
   .brand-text h2 a {
@@ -69,19 +71,17 @@ h3 {
     font-size: 35px;
   }
   nav.nav-primary {
-    margin-top: 20px;
-    a {
-      text-transform: uppercase;
-    }
+    margin-top: 15px;
     ul.nav {
       display: inline-block;
       &>li {
         text-align: center;
         float: left;
         &>a {
+          text-transform: uppercase;
           padding: 0 10px;
           font-size: 24px;
-          transition: all 0.5s;
+          transition: all 0.3s;
           transform-origin: 50% 50%;
           &:hover {
             background: transparent;
@@ -104,8 +104,9 @@ h3 {
     li {
       float: left;
       width: 50%;
-      padding: 4px 0;
       a {
+        display: inline-block;
+        padding: 4px 0;
         font-size: 20px;
         font-weight: 200;
         line-height: 24px;
@@ -134,6 +135,7 @@ h3 {
 @media only screen and (min-width: $screen-sm-min) {
   /* Header */
   .banner {
+    margin-bottom: 25px;
     .brand {
       float: left;
     }
@@ -149,12 +151,8 @@ h3 {
     }
   }
   /* Footer */
-  .content-info {
-    ul {
-      li {
-        width: 33.333333%;
-      }
-    }
+  .content-info ul li {
+    width: 33.333333%;
   }
 }
 

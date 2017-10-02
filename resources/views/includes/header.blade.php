@@ -3,7 +3,7 @@
   <div class="container">
 
     <a class="brand" href="{{ url('/') }}">
-      <img class="img-circle" src="{{ asset('img/headshot-square.jpg') }}">
+      <img src="{{ asset('img/headshot-square.jpg') }}">
     </a>
 
     <div class="brand-text">
