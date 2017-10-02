@@ -1,9 +1,146 @@
-
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+// Extra Small Devices, Phones
+
+/* Global */
+
+body,
+html {
+  height: 100%;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap {
+	margin-top: 20px;
+  flex: 1 0 auto;
+}
+
+a {
+	font-weight: 500;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: gray;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 650px;
+}
+
+/* Header */
+.banner {
+  text-align: center;
+  margin: 25px 0;
+  .brand {
+    display: inline-block;
+    img {
+      border: 2px solid $brand-primary;
+      max-width: $avatar-width;
+    }
+  }
+  .brand-text h2 a {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 35px;
+  }
+  nav.nav-primary {
+    margin-top: 20px;
+    a {
+      text-transform: uppercase;
+    }
+    ul.nav {
+      display: inline-block;
+      &>li {
+        text-align: center;
+        float: left;
+        &>a {
+          padding: 0 10px;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+// Footer
+.content-info {
+  background-color: $brand-primary;
+  margin-top: 30px;
+  padding: 15px 0;
+  ul {
+    margin: 0;
+    li {
+      float: left;
+      width: 50%;
+      padding: 3px 0;
+      a {
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 24px;
+        color: #ffffff;
+        svg {
+          font-size: 24px;
+          margin-right: 10px;
+          position: relative;
+          top: 1px;
+        }
+      }
+    }
+  }
+}
+
+// Small Devices (tablets, 768px and up)
+@media only screen and (min-width: $screen-sm-min) {
+  /* Header */
+  .banner {
+    .brand {
+      float: left;
+    }
+    .brand-text {
+      float: right;
+      text-align: right;
+      nav.nav-primary {
+        margin: 10px -10px 0 0;
+        ul.nav>li {
+          float: right;
+        }
+      }
+    }
+  }
+  /* Footer */
+  .content-info {
+    ul {
+      li {
+        width: 33.333333%;
+      }
+    }
+  }
+}
+
+// Medium Devices (desktops, 992px and up)
+@media only screen and (min-width: $screen-md-min) {}
