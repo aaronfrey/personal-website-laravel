@@ -1,5 +1,3 @@
-// Fonts
-//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 // Variables
 @import "variables";
 
@@ -22,7 +20,7 @@ body {
 }
 
 .container {
-  max-width: 650px;
+  max-width: $max-content-width;
 }
 
 .wrap {
