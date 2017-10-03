@@ -4,10 +4,7 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-// Extra Small Devices, Phones
-
-/* Global */
-
+// Global
 body,
 html {
   height: 100%;
@@ -42,46 +39,53 @@ p {
   margin-bottom: 25px;
 }
 
+h2 {
+  color: $brand-primary;
+}
+
 h3 {
   color: gray;
   margin-top: 10px;
   font-weight: 300;
 }
 
-/* Header */
+hr {
+  border-top: 1px solid $brand-primary;
+}
 
+// Header
 .banner {
   border-top: 20px solid $brand-primary;
   text-align: center;
   padding-top: 25px;
   .brand {
-  	position: relative;
-  	border-radius: 15px;
+    position: relative;
+    border-radius: 15px;
     display: inline-block;
     transition: all 0.8s;
     text-align: center;
     img {
-    	position: relative;
-    	z-index: -1;
+      position: relative;
+      z-index: -1;
       max-width: $avatar-width;
       border: 3px solid $brand-primary;
       border-radius: 15px;
     }
     svg {
-    	color: #fff;
-    	opacity: 0;
-    	position: absolute;
-    	width: 100%;
-    	left: 0;
-    	top: 33%;
-    	font-size: 55px;
-    	transition: opacity 0.8s;
+      color: #fff;
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 33%;
+      font-size: 55px;
+      transition: opacity 0.8s;
     }
     &:hover {
-    	background-color: rgba($brand-primary, 0.6);
-    	svg {
-    		opacity: 1;
-    	}
+      background-color: rgba($brand-primary, 0.6);
+      svg {
+        opacity: 1;
+      }
     }
   }
   .brand-text h2 a {
@@ -151,8 +155,24 @@ h3 {
   }
 }
 
+// Resume Page
+.resume-container {
+	p {
+		font-size: 16px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+		&.skills {
+			font-size: 20px;
+		}
+	}
+  .info-section {
+    margin-bottom: 20px;
+  }
+}
+
 // Small Devices (tablets, 768px and up)
 @media only screen and (min-width: $screen-sm-min) {
+
   /* Header */
   .banner {
     margin-bottom: 25px;
@@ -170,6 +190,7 @@ h3 {
       }
     }
   }
+
   /* Footer */
   .content-info ul li {
     width: 33.333333%;
