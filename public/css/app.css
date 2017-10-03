@@ -8403,6 +8403,8 @@ h3 {
 
 hr {
   border-top: 1px solid #ff4444;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .banner {
@@ -8538,7 +8540,7 @@ hr {
 }
 
 .resume-container p.skills {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .resume-container .info-section {

@@ -51,6 +51,8 @@ h3 {
 
 hr {
   border-top: 1px solid $brand-primary;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 // Header
@@ -157,14 +159,14 @@ hr {
 
 // Resume Page
 .resume-container {
-	p {
-		font-size: 16px;
-		line-height: 1.5;
-		margin-bottom: 10px;
-		&.skills {
-			font-size: 20px;
-		}
-	}
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    &.skills {
+      font-size: 22px;
+    }
+  }
   .info-section {
     margin-bottom: 20px;
   }
