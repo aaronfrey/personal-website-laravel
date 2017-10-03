@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('title', 'Resume')
+@section('title', 'Contact Me')
 
 @section('content')
 
