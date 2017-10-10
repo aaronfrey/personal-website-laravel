@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'PortfolioController@home');
+
 Route::get('contact', 'PortfolioController@contact');
+Route::post('contact', 'PortfolioController@saveContactForm');
+
 Route::get('plugins', 'PortfolioController@plugins');
 Route::get('resume', 'PortfolioController@resume');

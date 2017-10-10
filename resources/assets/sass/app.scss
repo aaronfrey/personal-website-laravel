@@ -40,8 +40,8 @@ p {
 }
 
 h1 {
-	text-transform: uppercase;
-	font-weight: 200;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 
 h1,
@@ -165,10 +165,10 @@ hr {
 
 // 404 Page
 .not-found {
-	img {
-		border: 3px solid $brand-primary;
-		width: 100%;
-	}
+  img {
+    border: 3px solid $brand-primary;
+    width: 100%;
+  }
 }
 
 // Plugins Page
@@ -192,6 +192,56 @@ hr {
   .info-section {
     margin-bottom: 20px;
   }
+}
+
+// Forms
+form {
+  margin: 20px 0;
+  .form-control {
+    min-height: 40px;
+    font-size: 20px;
+    padding: 6px 15px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    border: 2px solid $brand-primary;
+    &::-webkit-input-placeholder {
+      color: $brand-black;
+    }
+    &::-moz-placeholder {
+      color: $brand-black;
+    }
+    &:-ms-input-placeholder {
+      color: $brand-black;
+    }
+    &:-moz-placeholder {
+      color: $brand-black;
+    }
+    &.error {
+      border: 2px solid $brand-primary !important;
+    }
+  }
+  textarea.form-control {
+    min-height: 100px;
+  }
+}
+
+// Buttons
+.btn {
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  font-weight: 300;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  height: 54px;
+  width: 100%;
+  padding: 6px 25px;
+  font-size: 22px;
+  border-radius: 27px;
 }
 
 // Small Devices (tablets, 768px and up)
