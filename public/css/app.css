@@ -3373,16 +3373,16 @@ output {
 }
 
 .form-control::-moz-placeholder {
-  color: #807f7f;
+  color: #000000;
   opacity: 1;
 }
 
 .form-control:-ms-input-placeholder {
-  color: #807f7f;
+  color: #000000;
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #807f7f;
+  color: #000000;
 }
 
 .form-control::-ms-expand {
@@ -8573,23 +8573,6 @@ form .form-control {
   padding: 6px 15px;
   margin-bottom: 15px;
   font-weight: 300;
-  border: 2px solid #ff4444;
-}
-
-form .form-control::-webkit-input-placeholder {
-  color: #000000;
-}
-
-form .form-control::-moz-placeholder {
-  color: #000000;
-}
-
-form .form-control:-ms-input-placeholder {
-  color: #000000;
-}
-
-form .form-control:-moz-placeholder {
-  color: #000000;
 }
 
 form .form-control.error {

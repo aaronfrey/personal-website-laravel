@@ -203,19 +203,6 @@ form {
     padding: 6px 15px;
     margin-bottom: 15px;
     font-weight: 300;
-    border: 2px solid $brand-primary;
-    &::-webkit-input-placeholder {
-      color: $brand-black;
-    }
-    &::-moz-placeholder {
-      color: $brand-black;
-    }
-    &:-ms-input-placeholder {
-      color: $brand-black;
-    }
-    &:-moz-placeholder {
-      color: $brand-black;
-    }
     &.error {
       border: 2px solid $brand-primary !important;
     }
