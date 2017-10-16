@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactInformation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class PortfolioController extends Controller {
 
@@ -21,11 +23,16 @@ class PortfolioController extends Controller {
     ]);
 
     // The contact info is valid, store in database and send email
-    $name       = $request->input('name');
-    $email      = $request->input('email');
-    $telephone  = $request->input('telephone');
-    $website    = $request->input('website');
-    $details    = $request->input('details');
+
+    $data = array(
+      'name'       => $request->input('name'),
+      'email'      => $request->input('email'),
+      'telephone'  => $request->input('telephone'),
+      'website'    => $request->input('website'),
+      'details'    => $request->input('details')
+    );
+
+    $sent = Mail::to('aaron.frey@gmail.com')->send(new ContactInformation($data));
 
     // Redirect back to form if there are errors
     return back()->withInput();
