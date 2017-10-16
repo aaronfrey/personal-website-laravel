@@ -22,8 +22,7 @@ class PortfolioController extends Controller {
       'details'   => 'required'
     ]);
 
-    // The contact info is valid, store in database and send email
-
+    // The contact info is valid, send email
     $data = array(
       'name'       => $request->input('name'),
       'email'      => $request->input('email'),
@@ -34,8 +33,8 @@ class PortfolioController extends Controller {
 
     $sent = Mail::to('aaron.frey@gmail.com')->send(new ContactInformation($data));
 
-    // Redirect back to form if there are errors
-    return back()->withInput();
+    // Redirect back to form
+    return back()->with('status', 'Thank you! Someone will review your request and get back to you shortly.');
   }
 
   function home() {
