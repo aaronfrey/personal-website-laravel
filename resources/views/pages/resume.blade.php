@@ -8,7 +8,7 @@
 
     <h2>Skills</h2>
     <hr>
-    <p class="skills">PHP, JavaScript, jQuery, Wordpress, SQL, HTML5, CSS3, SASS, LESS, Angular, Laravel, Gulp, Grunt, Composer, Photoshop.</p>
+    <p class="skills">PHP, JavaScript, jQuery, Wordpress, Laravel, SQL, HTML5, CSS3, SASS, LESS, Angular, Vagrant, Gulp, Grunt, Composer, Photoshop.</p>
 
   	<h2>Experience</h2>
   	<hr>
